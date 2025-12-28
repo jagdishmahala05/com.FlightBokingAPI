@@ -2168,10 +2168,10 @@ $@"<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""
             var xmlfiles = Path.Combine(_env.ContentRootPath, "XmlFiles/");
             if (!string.IsNullOrWhiteSpace(xmlfiles))
             {
-                if (!Directory.Exists(xmlfiles))
-                    Directory.CreateDirectory(xmlfiles);
-                File.WriteAllText(Path.Combine(xmlfiles, Selected_flight_result.id + "_Fare_PriceUpsellWithoutPNR_Request.xml"), requestContent, Encoding.UTF8);
-                File.WriteAllText(Path.Combine(xmlfiles, Selected_flight_result.id + "_Fare_PriceUpsellWithoutPNR_Response.xml"), re ?? string.Empty, Encoding.UTF8);
+                //if (!Directory.Exists(xmlfiles))
+                //    Directory.CreateDirectory(xmlfiles);
+                //File.WriteAllText(Path.Combine(xmlfiles, Selected_flight_result.id + "_Fare_PriceUpsellWithoutPNR_Request.xml"), requestContent, Encoding.UTF8);
+                //File.WriteAllText(Path.Combine(xmlfiles, Selected_flight_result.id + "_Fare_PriceUpsellWithoutPNR_Response.xml"), re ?? string.Empty, Encoding.UTF8);
             }
 
             return flightdatamain;
